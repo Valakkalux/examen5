@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/altaempleados','empleado@altaempleados');
+Route::get('/guardaempleados','empleado@guardaempleados')->name('guardaempleados');
